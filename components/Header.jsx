@@ -106,7 +106,9 @@ const Header = props => {
       <Tab className={classes.tab} label="Mobil" />
       </Link>
       <Tab className={classes.tab} label="Produkter" />
+      <Link href='/support'>
       <Tab className={classes.tab} label="support/fjærnstyring" />
+      </Link>
       <Tab className={classes.tab} label="Om oss" />
     </Tabs>
   );
@@ -149,11 +151,13 @@ const Header = props => {
              Produkter
             </ListItemText>
           </ListItem>
+          <Link href='/support'>
           <ListItem onClick={() => setOpenDrawer(false)} divider button>
             <ListItemText className={classes.drawerItem} disableTypography>
              Support/Fjærnstyring
             </ListItemText>
           </ListItem>
+          </Link>
           <ListItem onClick={() => setOpenDrawer(false)} divider button>
             <ListItemText className={classes.drawerItem} disableTypography>
              Om oss

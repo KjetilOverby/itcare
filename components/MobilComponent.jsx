@@ -3,6 +3,7 @@ import { makeStyles, Grid, Typography, Container } from '@material-ui/core';
 import mobileIllustration from '../images/mobile-illustration.png';
 import factIllustration from '../images/FactIllustration.png';
 
+
 const useStyles = makeStyles((theme) => ({
   img: {
     background:
@@ -175,6 +176,12 @@ const useStyles = makeStyles((theme) => ({
        paddingLeft: '0'
     }
   },
+  headerFacts: {
+      marginBottom: '1.5rem'
+  },
+  textFactsContainer: {
+      marginBottom: '1.5rem'
+  }
 }));
 
 const MobilComponent = () => {
@@ -254,9 +261,9 @@ const MobilComponent = () => {
         <Grid className={classes.factSectionContainer} container>
           <Grid item>
             <Grid className={classes.mobitTextContainer} item>
-              <Typography variant="h4">Fakta</Typography>
+              <Typography className={classes.headerFacts} variant="h4">Fakta</Typography>
               <br />
-              <Typography>
+              <Typography className={classes.textFactsContainer}>
                 I dag er det mer enn 30 forhandlere som bærer Mobit-navnet. I
                 tillegg har vi nærmere 100 Mobit-medlemmer, og er derved den
                 største forhandlerkjeden innen mobil og IT til bedriftsmarkedet.
@@ -265,7 +272,7 @@ const MobilComponent = () => {
                 industrielle eiere, solid egenkapital og solide partnere.
               </Typography>
               <br />
-              <Typography variant="h4">Vårt kundeløfte</Typography>
+              <Typography className={classes.headerFacts} variant="h4">Vårt kundeløfte</Typography>
               <br />
               <Typography>
                 Det viktigste for oss er å bidra til å gjøre din digitale
@@ -285,12 +292,15 @@ const MobilComponent = () => {
             <img
               className={classes.illustration2}
               src={factIllustration}
-              alt=""
+              alt="illustration"
             />
           </Grid>
         </Grid>
+
+     
       </Container>
-    </div>
+
+          </div>
   );
 };
 
