@@ -26,7 +26,10 @@ const useStyles = makeStyles(theme => ({
       marginBottom: '1.4rem'
     },
     [theme.breakpoints.down('xs')]: {
-      marginBottom: '2.1rem'
+      marginBottom: '1.2rem'
+    },
+    [theme.breakpoints.down(350)]: {
+      marginBottom: '.5rem'
     }
   },
   header: {
@@ -69,7 +72,8 @@ const useStyles = makeStyles(theme => ({
   },
   drawerItem: {
     ...theme.typography.tab,
-    color: theme.palette.dark.main
+    color: theme.palette.dark.main,
+   
   }
 }));
 
@@ -127,7 +131,7 @@ const Header = props => {
         <List disablePadding>
         <Link href='/'>
           <ListItem onClick={() => setOpenDrawer(false)} divider button>
-            <ListItemText className={classes.drawerItem} disableTypography>
+            <ListItemText style={{paddingTop: '1.5rem'}} className={classes.drawerItem} disableTypography>
              Hjem
             </ListItemText>
           </ListItem>

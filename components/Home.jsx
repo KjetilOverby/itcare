@@ -32,7 +32,11 @@ const useStyles = makeStyles((theme) => ({
     transform: 'scale(1.1)',
     overflow: 'hidden',
     [theme.breakpoints.down('xs')]: {
-        height: '55vh'
+        height: '65vh',
+       
+      },
+    [theme.breakpoints.down(350)]: {
+        height: '100vh'
       },
   },
 
@@ -95,6 +99,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '3px 3px 30px rgba(0,0,0,.15)',
     [theme.breakpoints.between(1900, 1990)]: {
       width: '23rem',
+    },
+    [theme.breakpoints.down(350)]: {
+      width: '40rem',
+      margin: '1rem 1rem 1rem 1rem'
     },
   },
   boxContainer: {

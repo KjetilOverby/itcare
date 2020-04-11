@@ -21,7 +21,11 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       backgroundPosition: 'bottom',
-      height: '35vh'
+      height: '90vh'
+    },
+    [theme.breakpoints.down(350)]: {
+      backgroundPosition: 'bottom',
+      height: '100vh'
     }
   },
   imageTextContainer: {
@@ -42,6 +46,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       margin: '1rem 0 0 1rem'
     },
+   
+    [theme.breakpoints.down(350)]: {
+      margin: '1rem 0 0 1rem',
+      width: '20em'
+    },
+   
     
   },
   imageText: {
@@ -94,9 +104,12 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: '0rem'
     },
     [theme.breakpoints.down('xs')]: {
-        height: '17rem',
+        height: '16rem',
         margin: '0 0 0 0rem'
-      }
+      },
+      [theme.breakpoints.down(350)]: {
+        height: '12rem',
+      },
     
   },
   illustration2: {
@@ -115,14 +128,19 @@ const useStyles = makeStyles((theme) => ({
       height: '24rem',
       margin: '5rem 0 0 2rem',
     },
-    [theme.breakpoints.down('sm')]: {
-      height: '15rem'
-    },
+   
     [theme.breakpoints.down('sm')]: {
         height: '18rem',
         margin: '0 0 0 -2rem',
         
-      }
+      },
+      [theme.breakpoints.down('xs')]: {
+        height: '15rem'
+      },
+      [theme.breakpoints.down(350)]: {
+        height: '12rem',
+        margin: '0 0 0 0'
+      },
   },
   sectionContainer: {
     minWidth: '80vw',
@@ -139,6 +157,10 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('md')]: {
       marginLeft: '5rem',
+    },
+    [theme.breakpoints.down(350)]: {
+      marginLeft: '5rem',
+      height: '2rem',
     },
   },
   mobitTextContainer: {
@@ -158,6 +180,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
         margin: '0 0 0 0rem',
         paddingLeft: '1rem'
+      },
+    [theme.breakpoints.down(350)]: {
+       width: '18rem'
       }
   },
   factSectionContainer: {

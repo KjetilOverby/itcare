@@ -15,6 +15,10 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('xs')]: {
         width: '20rem',
         marginBottom: '-5rem'
+      },
+      [theme.breakpoints.down(350)]: {
+        width: '18rem',
+        marginBottom: '-5rem'
       }
     
   },
